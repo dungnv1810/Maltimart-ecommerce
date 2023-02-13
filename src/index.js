@@ -1,13 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import {BrowserRouter as Router} from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+
+import store from "./redux/store"
+import { Provider } from 'react-redux';
+
 import App from './App';
+import "./index.css"
+import 'remixicon/fonts/remixicon.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
+import 'react-toastify/dist/ReactToastify.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Provider store={store}>
+      <ToastContainer
+        theme="dark"
+        position="top-right"
+        autoClose={1500}
+        closeOnClick
+        pauseOnFocusLoss
+        pauseOnHover
+        hideProgressBar={false}
+        newestOnTop={false}
+        />
+        <App />
+      </Provider>
+    </Router>
   </React.StrictMode>
 );
 

@@ -1,0 +1,32 @@
+.buy__btn{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    background: var(--primary-color) !important;
+    color: #fff !important;
+  }
+  
+.login{
+
+}
+.auth__from{
+    background: var(--primary-color);
+    padding: 40px;
+    border-radius: 5px;
+}
+.auth__from p{
+    margin-top: 30px;
+}
+.auth__from p a{
+    color: rgba(255,255,255,0.735);
+    text-decoration: none;
+}
+.auth__btn{
+    margin-top: 30px;
+    background: #fff !important;
+    color: var(--primary-color) !important;
+}

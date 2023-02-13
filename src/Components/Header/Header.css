@@ -1,0 +1,196 @@
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.logo img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.logo h1{
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.logo p{
+    margin-bottom: 0;
+    line-height: 0;
+}
+.navigation{
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+.nav__item a{
+    text-decoration: none;
+    color: unset;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.cart__icon, 
+.fav__icon{
+    position: relative;
+}
+.nav__icons .badge{
+    position: absolute;
+    content: "";
+    top: 25%;
+    right: -40%;
+    background: var(--primary-color);
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    border-radius: 50%;
+    color: #fff;
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.nav__icons span i{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.nav__icons .profile img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.nav__icons .profile{
+    position: relative;
+    z-index: 9;
+}
+.nav__icons .profile .profile__action{
+    position: absolute;
+    top: 97%;
+    left: 0;
+    width: 146px;
+    z-index: 10;
+    padding: 13px;
+    background: var(--card-bg-01);
+    line-height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show__profileActions{
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+}
+.profile__login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile__login a{
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: .3s;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.profile__login a:hover{
+    
+}
+.mobile__menu{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+}
+.nav__active{
+    font-weight: 700 !important;
+}
+
+.sticky__header{
+    background: #fff;
+    position: sticky;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px -3px #ddd;
+}
+
+@media only screen and (max-width: 768px){
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.53);
+        z-index: 999;
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        padding-left: 0px;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav__active{
+        display: block;
+    }
+    .mobile__menu{
+        display: block;
+    }
+    .mobile__menu i{
+        font-size: 1.1rem;
+    }
+    .logo img{
+        width: 1rem;
+        height: 1rem;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+    .fav__icon i,
+    .cart__icon i{
+        font-size: 1.2rem !important;
+    }
+    .nav__icons span img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+}

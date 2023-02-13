@@ -1,0 +1,22 @@
+.clock__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+.clock__data{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+@media only screen and (max-width: 992px){
+    .clock__wrapper{
+        justify-content: center;
+    }
+    .clock__data h1{
+        font-size: 1.1rem !important;
+    }
+    .clock__data h5{
+        font-size: .9rem !important;
+    }
+}

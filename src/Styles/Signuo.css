@@ -1,0 +1,4 @@
+.auth__from input[type='file']{
+    color: #fff !important;
+    cursor: pointer;
+}

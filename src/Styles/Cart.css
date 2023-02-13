@@ -1,0 +1,29 @@
+.table tr td img{
+    width: 80px !important;
+    height: 80px !important;
+}
+
+td i {
+    cursor: pointer;
+}
+th, 
+td{
+    color: var(--primary-color);
+}
+
+.shop__btn {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.total__amount h6{
+    margin: 0;
+    font-size: 1.2rem;
+}
